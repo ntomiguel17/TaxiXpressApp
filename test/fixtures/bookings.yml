@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pickup: MyText
+  dropoff: MyText
+  people: 1
+  category_id: 
+  description: MyText
+
+two:
+  pickup: MyText
+  dropoff: MyText
+  people: 1
+  category_id: 
+  description: MyText

@@ -1,0 +1,16 @@
+<%= simple_form_for @booking, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :pickup %>
+  <%= error_span(@booking[:pickup]) %>
+  <%= f.input :dropoff %>
+  <%= error_span(@booking[:dropoff]) %>
+  <%= f.input :people %>
+  <%= error_span(@booking[:people]) %>
+  <%= f.association :category %> 
+  <%= error_span(@booking[:category]) %>
+  <%= f.input :description %>
+  <%= error_span(@booking[:description]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                bookings_path, :class => 'btn btn-default' %>
+<% end %>
